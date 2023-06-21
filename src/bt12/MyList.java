@@ -26,7 +26,7 @@ public class MyList<T> {
     }
 
     public ArrayList<T> clone() {
-        return this.array;
+        return (ArrayList<T>) this.array.clone();
     }
 
     public boolean contains(T element) {
